@@ -4,7 +4,7 @@ require_relative "lib/bloopy/version"
 
 Gem::Specification.new do |spec|
   spec.name = "bloopy"
-  spec.version = Bloopy::VERSION
+  s.version = File.read("VERSION").strip
   spec.authors = ["Maple Ong"]
   spec.email = ["maple.develops@gmail.com"]
 
