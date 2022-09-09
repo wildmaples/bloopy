@@ -1,15 +1,16 @@
-name: Move new issues into Triage
-permissions: write-all
+name: Adds all issues that don't include the 'bug' or 'needs-triage' labels to project board
+
 on:
   issues:
-    types: [opened]
+    types:
+      - opened
 
 jobs:
-  automate-project-columns:
+  add-to-project:
+    name: Add issue to project
     runs-on: ubuntu-latest
     steps:
-      - uses: alex-page/github-project-automation-plus@v0.8.1
+      - uses: actions/add-to-project@v0.3.0
         with:
-          project: "test1"
-          column: "lmao"
-          repo-token: ${{ secrets.LMAO }}
+          project-url: https://github.com/users/wildmaples/projects/1
+          github-token: ${{ secrets.LMAO }}
