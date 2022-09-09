@@ -12,3 +12,4 @@ jobs:
         with:
           project: A fun project
           column: In Progress
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
