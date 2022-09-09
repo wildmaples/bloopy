@@ -9,3 +9,4 @@ jobs:
         uses: peter-evans/create-or-update-project-card@v2
         with:
           project-number: 1
+          column-name: In Progress
