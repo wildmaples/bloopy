@@ -8,7 +8,4 @@ jobs:
       - name: Create or Update Project Card
         uses: peter-evans/create-or-update-project-card@v2
         with:
-          project-name: My project
-          column-name: My column
-      - name: Check output
-        run: echo ${{ steps.coupc.outputs.card-id }}
+          project-name: 1
